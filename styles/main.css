@@ -45,10 +45,10 @@ ul {
 }
 
 img {
-    padding: .5rem;
+    float: right;
     max-width: 15rem;
     position: absolute;
-    margin: 1rem 20rem;
+    margin: 2rem 17rem;
 }
 
 
