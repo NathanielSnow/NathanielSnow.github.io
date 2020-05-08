@@ -1,0 +1,29 @@
+@media only screen and (min-width: 66em) {
+    
+    #nav {
+        max-width: 66em;
+        margin: 1.25rem auto;
+    }
+
+    #nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        border-radius: 6px;
+    }
+    
+    #nav ul li a {
+        display: flex;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 16.5em;
+        text-align: center;
+    }
+
+    #nav ul li {
+        float: left;
+    }
+}
