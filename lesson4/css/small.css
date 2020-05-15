@@ -1,0 +1,119 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    background-color: #2ead98;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.headings {
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.motto {
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav button {
+    margin: .2rem 40%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #003333;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid #FFFF00;
+}
+
+nav ul li a:hover {background-color: #003366; color: #FFFF00;}
+
+
+nav ul li.active a{background-color: #003366; color: #FFFF00;}
+
+nav ul.hide {display: none;}
+
+main, footer {
+    color: white;
+    
+    margin: 1.25rem auto;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 66em;
+}
+
+main h2 {
+    text-align: center;
+    color: black;
+}
+
+.contentBox {
+    display: block;
+    margin: 10px auto;
+    border: 1px dashed #000000;
+    background-color: rgb(172, 165, 165);
+    color: #444;
+    font-style: italic;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #003333;
+    max-width: 70em;
+
+}
+
+footer a {
+    color: #FFFF00;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
