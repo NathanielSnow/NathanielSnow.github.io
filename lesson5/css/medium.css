@@ -1,0 +1,69 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    
+    .contentBox {
+        background-color: rgb(230, 221, 221);
+        color: #444444;
+        padding: 0.5rem;
+        margin: 5px auto;
+    }
+
+    #fiveDayForecast {
+        display: block;
+        border: none;
+        background-color: white;
+    }
+
+    #fiveDayForecast p {
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: x-large;
+    }
+
+    table {
+        margin: auto;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-style: normal;
+        text-align: center;
+    }
+    
+    th, td {
+        padding: 15px;
+    }
+    
+    th {
+        background-color: #003366;
+        color: white;
+        font-size: larger;
+    }
+    
+    td span {
+        font-size: xx-large;
+    }
+
+    #articlePic {
+        width: 24rem;
+        height: 12rem;
+        float: right;
+        margin-left: 1rem;
+    }
+    
+    #map {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #contactInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        text-align: left;
+    }
+    
+} /*end medium */
