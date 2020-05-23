@@ -144,6 +144,14 @@ main h2 {
     margin-bottom: 1rem;
 }
 
+#fiveDayForecast {
+    display: none;
+}
+
+#map {
+    display: none;
+}
+
 
 #map:hover {
     position:relative;
