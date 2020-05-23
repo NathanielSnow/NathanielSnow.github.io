@@ -136,10 +136,6 @@ main h2 {
     position: relative;
 }
 
-#fiveDayForecast {
-    display: none;
-}
-
 #articlePic {
     width: 24rem;
     height: 12rem;
@@ -148,10 +144,6 @@ main h2 {
     margin-bottom: 1rem;
 }
 
-
-#map {
-    display: none;
-}
 
 #map:hover {
     position:relative;
