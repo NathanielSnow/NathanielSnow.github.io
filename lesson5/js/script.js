@@ -6,7 +6,7 @@ var dayNum = date.getDay();
 var monthName;
 
 
-if (dayNum == 5) {
+if (dayNum == 6) {
     document.getElementById("asideMessage").setAttribute("class", "show"); 
     document.getElementById("asideMessage").innerHTML = "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park.";
 }
