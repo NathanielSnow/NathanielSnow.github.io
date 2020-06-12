@@ -32,7 +32,7 @@ function adjustRating(rating) {
 }
 
 function checkFullName(name) {
-    const exp = /^\w{0,5}$/;
+    const exp = /^\w{0,4}$/;
     return exp.test(name);
 }
 
