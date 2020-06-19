@@ -50,6 +50,7 @@
     .towns img {
         padding-top: 8%;
         padding-left: 3%
+	padding-right: 3%;
     }
 
     .towns section:nth-child(odd) img {
