@@ -149,11 +149,15 @@ main h2 {
     display: block;
     border: none;
     background-color: white;
+    width: 50%;
 }
 
 .infoBox{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 #fiveDayForecast p {
