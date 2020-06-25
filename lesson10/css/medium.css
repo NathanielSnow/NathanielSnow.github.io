@@ -1,0 +1,69 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+    
+    .contentBox {
+        background-color: rgb(230, 221, 221);
+        color: #444444;
+        padding: 0.5rem;
+        margin: 5px auto;
+        font-weight: normal;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /*justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;*/
+    }
+
+    .gallery picture:hover {
+        box-shadow: none;
+    }
+
+    #articlePic {
+        width: 24rem;
+        height: 12rem;
+        float: right;
+        margin-left: 1rem;
+    }
+    
+    #map {
+        display: inline-block;
+        width: 50%;
+    }
+
+    #contactInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        text-align: left;
+        background-color: white;
+    }
+
+    .towns section{
+        display: grid;
+	    grid-template-columns: 1fr 1fr;
+    }
+
+    .towns img {
+        padding-top: 8%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .towns section:nth-child(odd) img {
+        grid-column: 2;
+    }
+    
+    .towns section:nth-child(even) .data {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    
+    
+    p {padding: .75rem;}
+    
+} /*end medium */
