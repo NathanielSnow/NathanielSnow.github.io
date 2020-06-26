@@ -72,7 +72,7 @@ fetch(apiURL)
         const desc = jsObject.list[i].weather[0].description;
         
 
-        if (dateTime.getHours() == 18){
+        if (dateTime.getHours() == 18 && dateTime.getMinutes() == 00 && dateTime.getSeconds() == 00){
 
             let forecastTable = document.createElement("table");
             forecastTable.setAttribute('id', "forcast");
