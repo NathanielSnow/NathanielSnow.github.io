@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is the Preston Weather page. It is a rough draft.">
+<meta name="author" content="Nathaniel Snow">
+
+<!-- This start file was build by Nathaniel Snow  -->
+<title>The Weather Site</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Google APIs -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+     
+</head>
+<body>
+    <aside id="asideMessage" class="shift"></aside>
+
+<!-- HEADER HERE -->
+	<header>
+        <img src="images/localweather_logo.png" alt="weather logo">
+        <div class="headings">
+            <h1>The Weather Zone</h1>
+            <div class="motto">We watch the weather so you don't have to.</div>
+        </div>
+    </header>
+    
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" id="menuButton">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../soda springs/soda-springs.html">Soda Springs</a></li>
+            <li><a href="../fish haven/fish-haven.html">Fish Haven</a></li>
+            <li><a href="../stormcenter/stormcenter.html">Storm Center</a></li>  
+            <li class="active"><a href="gallery.html">Gallery</a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <h2>Gallery</h2>
+    <div class="gallery" id="galleryDiv">
+        <picture id="picture_1" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_1.jpg" alt="photo one">
+            <p>Sunny Day Today!</p>
+        </picture>
+        <picture id="picture_2" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_2.jpg" alt="photo two">
+            <p>Rainbow Seen Over The West Field.</p>
+        </picture>
+        <picture id="picture_3" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_3.jpg" alt="photo three">
+            <p>Snowing Heavily in Downtown.</p>
+        </picture>
+        <picture id="picture_4" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_4.jpg" alt="photo four">
+            <p>Heavy Fog on Main Street.</p>
+        </picture>
+        <picture id="picture_5" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_5.jpg" alt="photo five">
+            <p>Lightning Over Fish Haven.</p>
+        </picture>
+        <picture id="picture_6" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_6.jpg" alt="photo six">
+            <p>It's Raining in Soda Springs.</p>
+        </picture>
+        <picture id="picture_7" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_7.jpg" alt="photo seven">
+            <p>Strong Winds at the Beach</p>
+        </picture>
+        <picture id="picture_8" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_8.jpg" alt="photo eight">
+            <p>Partly Cloudy Just Outside of Preston</p>
+        </picture>
+        <picture id="picture_9" class="picture">
+            <img src="images/placeholder.jpg" data-src="images/photo_9.jpg" alt="photo nine">
+            <p>ACTIVE TORNADO WARNING!</p>
+        </picture>
+    </div>
+</main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <p id="authorInfo"></p> 
+    <p id="currentYear"></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: [
+                'Oswald'
+            ]
+        }
+    });
+            
+        </script>
+
+<script src="js/gallery.js"></script>    
+<script src="js/script.js"></script>
+<script src="js/windChill.js"></script>
+</body>
+</html>

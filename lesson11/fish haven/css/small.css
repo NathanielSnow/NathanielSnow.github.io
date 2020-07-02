@@ -1,0 +1,318 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    background-color: #2ead98;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.show {
+    display: block;
+    background-color: #FFFF00;
+    color:  #003366;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.headings {
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.motto {
+    margin-bottom: 1rem;
+}
+
+.weatherSummery {
+    font-family: Oswald;
+	position: absolute;
+    background-color: #2ead98;
+    /*background: radial-gradient(#eee, #4567aa); background: radial-gradient(#eee, #2ead98);*/
+	border: 1px solid #000;
+	padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    font-style: normal;
+    text-align: right;
+    margin: 1rem 1rem;
+    opacity: 0.8;
+}
+
+.weatherSummery h2 {
+    text-decoration: black;
+}
+
+.weatherSummery p {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+
+.weatherSummery span {
+    color: #FFFF00;
+    font-weight: bolder;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav button {
+    margin: .2rem 40%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #003333;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid #FFFF00;
+}
+
+nav ul li a:hover {background-color: #003366; color: #FFFF00;}
+
+
+nav ul li.active a{background-color: #003366; color: #FFFF00;}
+
+nav ul.hide {display: none;}
+
+main, footer {
+    color: white;
+    
+    margin: 1.25rem auto;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 66em;
+}
+
+main h2 {
+    text-align: center;
+    color: black;
+}
+
+.contentBox {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #000000;
+    background-color: rgb(172, 165, 165);
+    color: #444;
+    font-style: italic;
+    padding: 1rem;
+    font-weight: bolder;
+}
+
+
+#hero {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 20rem;
+    position: relative;
+    padding: 0;
+}
+
+#hero_img {
+    width: 100%;
+    height: 100%;
+}
+
+#fiveDayForecast {
+    display: block;
+    border: none;
+    background-color: white;
+    width: 50%;
+}
+
+.infoBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#fiveDayForecast p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-style: normal;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+    font-size: larger;
+}
+
+td img {
+    width: 75px; 
+}
+
+#articlePic {
+    width: 24rem;
+    height: 12rem;
+    float: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#map {
+    display: block;
+    width: 10%;
+}
+
+#map:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+    border-radius: 8px;
+}
+
+#contactInfo {
+    text-align: center;
+    font-style: normal;
+}
+
+#location {
+    display: flexbox;
+}
+
+#events {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flexbox;
+    border: 3px solid gray;
+    text-align: center;
+    font-style: normal;
+    font-size: large;
+    box-shadow: 0px 0px 56px -5px rgba(0,0,0,0.75);
+}
+
+#eventDiv{
+    font-style: normal;
+    font-size: medium;
+}
+
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+  
+  
+
+footer {
+    text-align: center;
+    background-color: #003333;
+    max-width: 70em;
+
+}
+
+footer a {
+    color: #FFFF00;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+

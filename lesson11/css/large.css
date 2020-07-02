@@ -1,0 +1,58 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+    
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+    
+    nav ul {margin-left: 30%;}
+    
+    nav ul li {
+        display: flex;
+        float: left;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .6rem 1rem;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery picture:hover {
+        box-shadow: 10px 10px 5px #000000;
+    }
+
+    .towns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+    }
+
+    .towns section:nth-child(odd) img {
+        grid-column: 1;
+        padding-left: 5%;
+    }
+
+    .towns section:nth-child(odd) .data {
+        grid-column: 1;
+        padding-left: 5%;
+    }
+    
+    .towns section:nth-child(even) img {
+        grid-column: 1;
+        padding-left: 5%;
+    }
+
+    .towns section:nth-child(even) .data {
+        grid-column: 1;
+        padding-left: 5%;
+    }
+
+
+} /*end large */
