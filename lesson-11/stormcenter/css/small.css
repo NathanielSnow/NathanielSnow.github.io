@@ -1,0 +1,206 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+header {
+    background-color: #2ead98;
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.show {
+    display: block;
+    background-color: #FFFF00;
+    color:  #003366;
+    text-align: center;
+    padding: 1rem 1rem;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.headings {
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.motto {
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav button {
+    margin: .2rem 40%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #003333;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid #FFFF00;
+}
+
+nav ul li a:hover {background-color: #003366; color: #FFFF00;}
+
+
+nav ul li.active a{background-color: #003366; color: #FFFF00;}
+
+nav ul.hide {display: none;}
+
+main, footer {
+    color: white;
+    
+    margin: 1.25rem auto;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 22em;
+}
+
+main h2 {
+    text-align: center;
+    color: black;
+}
+
+/*----------- FORM --------------*/
+
+
+
+form fieldset {
+    /*margin: 2rem 0;*/
+    border: 1px solid #003366;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #003366;;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: x-large;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.radioBtn label {
+    display: block;
+    color: black;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #003366;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    max-width: 96%;
+    margin-top: 1rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #2ead98;
+    color: black;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+option {
+    padding: 10rem;
+}
+
+
+#thankYouMessage {
+    color: black;
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 20em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+footer {
+    text-align: center;
+    background-color: #003333;
+    max-width: 70em;
+
+}
+
+footer a {
+    color: #FFFF00;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+

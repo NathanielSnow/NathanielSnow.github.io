@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is the Preston Weather page. It is a rough draft.">
+<meta name="author" content="Nathaniel Snow">
+
+<!-- This start file was build by Nathaniel Snow  -->
+<title>The Weather Site</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Google APIs -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,700&amp;display=swap" rel="stylesheet">
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/small.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+     
+</head>
+<body>
+    <aside id="asideMessage" class="shift"></aside>
+
+<!-- HEADER HERE -->
+	<header>
+        <a href="../index.html"><img src="images/localweather_logo.png" alt="weather logo"></a>
+        <div class="headings">
+            <h1>The Weather Zone</h1>
+            <div class="motto">We watch the weather so you don't have to.</div>
+        </div>
+    </header>
+    
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" id="menuButton">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../soda springs/soda-springs.html">Soda Springs</a></li>
+            <li class="active"><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="../stormcenter/stormcenter.html">Storm Center</a></li>  
+            <li><a href="../gallery/gallery.html">Gallery</a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h2>Fish Haven Idaho</h2>
+        <div class="contentBox" id="hero">
+            <section class="weatherSummery">
+                <h2><u>Weather Summary</u></h2>
+                <p>Currently: <span id="sky"></span></p>
+                <p>High: <span id="highTemp"></span></p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="windSpeed"></span></p>
+            </section>
+            <picture id="hero_picture">
+                <img src="images/main_fish_haven.jpg" alt="photo" id="hero_img"> 
+            </picture>
+            
+        </div>
+        <div id="events" class="contentBox">
+            <h3>Upcoming Events</h3>
+        </div>
+        <div class="contentBox" id="fiveDayForecast">
+            <p>5 day forecast</p>
+            <div class="infoBox">
+
+            </div>
+        </div>
+        <div class="contentBox">
+            <img src="images/fish_haven_story.jpg" id="articlePic" alt="Artical Picture">
+            <h3><b>Settlement of Fish Haven</b></h3>
+            <p><i>by the Daughters of Utah Pioneers</i></p>
+            <p>
+                The Bear Lake resort town of Fish Haven was founded in 1864. Most of the original settlers moved away, 
+                leaving Thomas and William Shirley, Henry Howell, John Stock and their families the first permanent settlers. 
+                Joseph C. Rich and John Bagley threw a seine into the mouth of a creek while surveying the lake and brought out 96 
+                large trout: hence the name "Fish Haven". Mail came about once a week by pack horse in summer and by men on snowshoes 
+                in winter. In 1868 an L.D.S. church was erected where all public meetings were held. Robert Pope was the first Bishop. 
+                The bell, donated by Charles B. Wilson, rang for all important occasions. 
+            </p>
+            <p><a href="https://www.waymarking.com/waymarks/WMB0GF_Settlement_of_Fish_Haven">Read More</a></p>
+        </div>
+        <div class="contentBox" id="contactInfo">
+            <section><img src="images/map.png" id="map" alt="map"></section>
+            <div>
+                <div id="location">
+                    <h3><u>Contact Info</u></h3>
+                    <p><b>The Weather Zone</b></p>
+                    <p><i class="fa fa-map-marker" style="font-size:20px;color:orangered"></i> 1272 Highway 89, Fish Haven, ID 83287</p>
+                </di>
+                <br>
+                <p>&#9742; (016) 945-2016</p>
+                <p><i class="fa fa-envelope" style="font-size:15px"></i> <a href="#">theweathersite@fxs.com</a></p>
+                <a href="https://www.facebook.com/ChurchofJesusChrist/" class="fa fa-facebook"></a>
+                <a href="https://www.pinterest.com/ldschurch/" class="fa fa-pinterest"></a>
+                <a href="https://twitter.com/ldschurch?lang=en" class="fa fa-twitter"></a>
+                <a href="https://tech.churchofjesuschrist.org/forum/viewtopic.php?t=5693" class="fa fa-skype"></a>
+            </div>
+            
+            
+        </div>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    <p id="authorInfo"></p> 
+    <p id="currentYear"></p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+    WebFont.load({
+        google: {
+            families: [
+                'Oswald'
+            ]
+        }
+    });
+            
+        </script>
+    
+<script src="js/script.js"></script>
+<script src="js/weatherInfo.js"></script>
+</body>
+</html>
