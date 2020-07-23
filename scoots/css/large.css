@@ -1,0 +1,46 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    nav ul {margin-left: 21%;}
+    
+    nav button {display: none;}
+    
+    nav ul.hide {display: block;}
+    
+    
+    nav ul li {
+        display: flex;
+        float: left;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid #010307;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #449faf;
+        color: #010307;
+    }
+
+    #rentalSummeryInfo p {
+        font-size: large;
+    }
+
+    #rentalSummery img {
+        width: 15em;
+        height: 15em;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery picture:hover {
+        box-shadow: 10px 10px 5px #010307;
+    }
+
+
+} /*end large */

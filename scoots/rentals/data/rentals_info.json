@@ -1,0 +1,172 @@
+{
+    "rental": [
+     
+       {
+          "type":"Honda Metro Scooter",
+          "max_persons": "1",
+          "reservation_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$30"
+              },
+
+              {
+                "reservation_type": "half_day",
+                "price": "$20"
+              }
+            ],
+          "walkIn_price": [
+            {
+                "reservation_type": "full_day",
+                "price": "$35"
+            },
+
+            {
+              "reservation_type": "half_day",
+              "price": "$25"
+            }
+            ],
+            "img": "images/Honda_Metro_Scooter.jpg"
+        },
+     
+        {
+            "type":"Honda Dio Scooter",
+            "max_persons": "2",
+            "reservation_price": [
+                {
+                    "reservation_type": "full_day",
+                    "price": "$40"
+                },
+  
+                {
+                  "reservation_type": "half_day",
+                  "price": "$30"
+                }
+              ],
+            "walkIn_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$45"
+              },
+  
+              {
+                "reservation_type": "half_day",
+                "price": "$35"
+              }
+              ],
+              "img": "images/Honda_Dio_Scooter.jpg"
+        },
+
+        {
+            "type":"Honda PCX150 Scooter",
+            "max_persons": "2",
+            "reservation_price": [
+                {
+                    "reservation_type": "full_day",
+                    "price": "$50"
+                },
+  
+                {
+                  "reservation_type": "half_day",
+                  "price": "$40"
+                }
+              ],
+            "walkIn_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$55"
+              },
+  
+              {
+                "reservation_type": "half_day",
+                "price": "$45"
+              }
+              ],
+              "img": "images/Honda_PCX150_Scooter.jpg"
+        },
+
+        {
+            "type":"Honda Pioneer ATV",
+            "max_persons": "4",
+            "reservation_price": [
+                {
+                    "reservation_type": "full_day",
+                    "price": "$70"
+                },
+  
+                {
+                  "reservation_type": "half_day",
+                  "price": "$50"
+                }
+              ],
+            "walkIn_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$80"
+              },
+  
+              {
+                "reservation_type": "half_day",
+                "price": "$60"
+              }
+              ],
+              "img": "images/Honda_Pioneer_ATV.jpg"
+        },
+
+        {
+            "type":"Jeep Wrangler - 4 door with a/c",
+            "max_persons": "5",
+            "reservation_price": [
+                {
+                    "reservation_type": "full_day",
+                    "price": "$100"
+                },
+  
+                {
+                  "reservation_type": "half_day",
+                  "price": "$70"
+                }
+              ],
+            "walkIn_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$125"
+              },
+  
+              {
+                "reservation_type": "half_day",
+                "price": "$85"
+              }
+              ],
+              "img": "images/Jeep_Wrangler_4_door.jpg"
+        },
+
+        {
+            "type":"Jeep Wrangler - 2 door",
+            "max_persons": "4",
+            "reservation_price": [
+                {
+                    "reservation_type": "full_day",
+                    "price": "$85"
+                },
+  
+                {
+                  "reservation_type": "half_day",
+                  "price": "$60"
+                }
+              ],
+            "walkIn_price": [
+              {
+                  "reservation_type": "full_day",
+                  "price": "$90"
+              },
+  
+              {
+                "reservation_type": "half_day",
+                "price": "$70"
+              }
+              ],
+              "img": "images/Jeep_Wrangler_2_door.jpg"
+        }
+    ]
+ }

@@ -1,0 +1,533 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+h1, p, a {
+    font-family: 'Cabin', serif;
+}
+
+
+h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+header {
+    background-color: #f4d499;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+    
+}
+
+#logo{
+    width: 10em;
+    height: 10em;
+}
+
+.headings {
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.headings h1{
+    font-size: 2rem;
+}
+
+.motto {
+    margin-bottom: 1rem;
+}
+
+.weatherSummery {
+	position: absolute;
+    background-color: #449faf;
+	border: 1px solid #010307;
+	padding: 1.5rem;
+    box-shadow: 0 0 30px #010307;
+    font-style: normal;
+    text-align: right;
+    margin: 1rem 1rem;
+    opacity: 0.8;
+}
+
+.weatherSummery h2 {
+    text-decoration: #010307;
+}
+
+.weatherSummery p {
+    text-align: center;
+    font-weight: bolder;
+    color: #010307;
+}
+
+.weatherSummery span {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+
+nav button {
+    margin: .2rem 40%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    background-color: #835211;
+    font-family: Verdana, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0.1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid #b1fafc;
+}
+
+nav ul li a:hover {background-color: #835211; color: #449faf; font-weight: bold;}
+
+
+nav ul li.active a{background-color: #835211; color: #449faf; font-weight: bold;}
+
+nav ul.hide {display: none;}
+
+main, footer {
+    color: white;
+    
+    margin: 1.25rem auto;
+}
+
+main {
+    margin: 1rem auto;
+    max-width: 66em;
+}
+
+main div {
+    background-color: #835211;
+}
+
+main h2 {
+    text-align: center;
+    color: #010307;
+}
+
+.contentBox {
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #010307;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    font-weight: bolder;
+    max-width: 66em;
+    background-color: #b1fafc;
+}
+
+.contentBox a {
+    font-style: normal;
+}
+
+.contentBox a:hover {
+    font-size: x-large;
+}
+
+
+#hero {
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    position: relative;
+    padding: 0;
+}
+
+#hero img {
+    width: 100%;
+    height: 100%;
+}
+
+#fiveDayForecast {
+    display: block;
+    border: none;
+    background-color: white;
+    width: 25%;
+}
+
+.infoBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#fiveDayForecast p {
+    text-align: center;
+    font-style: normal;
+    font-weight: 900;
+    font-size: medium;
+}
+
+#rentalInfo{
+    text-align: left;
+}
+
+#infoDiv{
+    font-size: small;
+}
+
+.rentalTableDiv img {
+    width: 100px;
+    height: 100px;
+}
+
+.rentalTableDiv img:hover {
+    width: 250px;
+    height: 250px;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #010307;
+    border-collapse: collapse;
+    font-style: normal;
+    text-align: center;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: #835211;
+    color: white;
+    font-size: larger;
+}
+
+td img {
+    width: 75px; 
+}
+
+#rentalSummery img {
+    width: 15em;
+    height: 15em;
+}
+
+.rentalSummeryP p{
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+#rentalSummeryInfo p {
+   font-size: small;
+   font-style: normal;
+}
+
+#callToAction {
+    border: 1px groove #010307;
+}
+
+.rentSumPics img{
+    border: 7px solid #835211;
+    border-radius: 8px;
+}
+
+#articlePic {
+    width: 24rem;
+    height: 12rem;
+    float: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tourDiv {
+    background-color: #FFFFFF;
+}
+
+
+.tour {
+    max-width: 66em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 50px;
+}
+
+.tour picture {
+    border: 0.5px solid #010307;
+}
+
+.tour img[data-src] {
+    filter: blur(0.2em);
+}
+  
+.tour img {
+    width: 100%;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+.tour img:hover {
+    box-shadow: 0 0 0 20px #835211;
+}
+
+.tour p {
+    text-align: center;
+    color: #010307;
+    font-weight: bolder;
+}
+
+#contactInfo {
+    text-align: center;
+    font-style: normal;
+}
+
+#location {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+#location img{
+    width: 350px;
+    height: 350px;
+}
+
+#historyArticle p {
+    text-align: left;
+    font-style: normal;
+}
+#historyArticle img {
+   float: right;
+}
+
+#historyArticle{
+    background-color: #449faf;
+}
+
+#historyArticle a {
+    color: #b1fafc;
+}
+
+#loactionMaps, #facilityLocations{
+    background-color: #449faf;
+}
+
+#facilityLocations p {
+    font-weight: bolder;
+}
+
+#facilityLocations img {
+    box-shadow: 0 0 0 10px #835211;
+    margin-bottom: 1rem;
+}
+
+
+iframe {
+    width: 300px;
+    height: 300px;
+}
+
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.fa-skype {
+    background: #00aff0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+  
+  
+
+footer {
+    text-align: center;
+    background-color: #835211;
+    max-width: 70em;
+
+}
+
+footer a {
+    color: #f4d499;
+}
+
+footer a:hover {
+    color: #b1fafc;
+}
+
+/*----------- FORM --------------*/
+
+
+
+form fieldset {
+    border: 1px solid #010307;
+    border-radius: 10px;
+    padding: .5rem 2%;  
+}
+
+textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form legend {
+    color: #010307;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: x-large;
+    text-align: center;
+}
+
+form label.top, form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    color: #835211;
+    font-size: 1.5rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.radioBtn label {
+    display: block;
+    color: #010307;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #010307;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    max-width: 96%;
+    margin-top: 1rem;
+}
+
+form input.submitBtn:hover {
+    background-color: #449faf;
+    color: #010307;
+    font-weight: bolder;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+option {
+    padding: 10rem;
+}
+
+
+#thankYouMessage {
+    color: black;
+    border: 3px solid black;
+    border-radius: 8px;
+    width: 20em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

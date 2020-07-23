@@ -1,0 +1,124 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    nav ul {margin-left: 5%;}
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid #010307;
+        padding: .6rem 0rem;
+        width: 9em;
+    }
+
+    
+    .contentBox {
+        background-color:#f4d499;
+        color: #010307;
+        background-color: #b1fafc;
+        padding: 0.5rem;
+        margin: 5px auto;
+        font-weight: normal;
+    }
+
+    .contentBox h2 {
+        font-size: xx-large;
+    }
+    .contentBox p {
+        font-size: large;
+        font-style: italic;
+    }
+
+    #rentalSummeryInfo{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rentSumPics {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    #location {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        height: 100%;
+    }
+
+    #rentalSummeryInfo p {
+        font-size: medium;
+    }
+
+    #rentalSummery img {
+        width: 10em;
+        height: 10em;
+    }
+
+    #rentalInfo{
+        text-align: left;
+    }
+    
+    #infoDiv{
+        width: 50%; /*can be in percentage also.*/
+        height: auto;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+        font-size: medium;
+    }
+    
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /*justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;*/
+    }
+
+    .gallery picture:hover {
+        box-shadow: none;
+    }
+
+    #articlePic {
+        width: 24rem;
+        height: 12rem;
+        float: right;
+        margin-left: 1rem;
+    }
+    
+    #map {
+        display: inline-block;
+        width: 50%;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    #fiveDayForecast p {
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        font-size: x-large;
+    }
+
+    #contactInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        text-align: left;
+        background-color: white;
+    }
+    
+    
+    
+    p {padding: .75rem;}
+    
+} /*end medium */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="This is the rental information page of the ~Scoots Website.">
+        <meta name="author" content="Nathaniel Snow">
+        
+        <title>Tour Page</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- Google APIs -->
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+        <!-- STYLE SHEETS -->
+        <link href="../css/normalize.css" rel="stylesheet">
+        <!-- phone -->
+        <link href="../css/small.css" rel="stylesheet">
+        <!--tablet -->
+        <link href="../css/medium.css" rel="stylesheet">
+        <!--desktop -->
+        <link href="../css/large.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="../images/site.webmanifest">
+
+
+             
+    </head>
+<body>
+	<header>
+        <a href="../index.html"><img src="../images/logo.png" alt="weather logo" id="logo"></a>
+        <div class="headings">
+            <h1><b>~Scoots</b></h1>
+            <div class="motto">We get you where you want to go!</div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <button onclick="toggleMenu()" id="menuButton">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../rentals/rentals.html">Rentals</a></li>
+            <li><a href="../reservations/reservations.html">Reservation</a></li>
+            <li class="active"><a href="tours/tours.html">Tours</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>    
+        </ul>
+    </nav>
+    <div class="contentBox">
+        <h1><b>Tour Page</b></h1>
+        <p>Time to explore our beautiful island!</p>
+    </div>
+    <div id="historyArticle" class="contentBox">
+        <img src="images/mayan_ruins.jpg" id="historyPic" alt="Mayan ruins">
+        <h3><b>A Brief History of Cozumel</b></h3>
+            <p id="historyText">
+                Cozumel’s history is incredibly rich and varied.  The earliest dated occupation sites on the island 
+                date back to 300 BC, when early Yucatec Maya began settling the island.  Later, the Putún (aka Chontal) 
+                Maya began using the island as a port in their extensive sea trading route.  A ruling dynasty of these Chontal-speaking 
+                Maya eventually dominated the island, building the temples and oratorios that you can still see today at San Gervasio and 
+                other sites on Cozumel. Over time, as these settled into the mainland, they became known as the Itzá.
+
+            </p>
+            <p><a href="http://www.cozumel4you.com/cozumel-history/">Read More</a></p>
+    </div>
+    <main>
+        <h2>Popular Tourist Destinations</h2>
+        <div class="tour" id="tourDiv">
+            
+            <picture id="tour_1" class="picture">
+                <a href="https://www.mrsanchos.com/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Mr_Sanchos_Beach_Club_Cozumel.jpg" alt="tour one"></a>   
+                <p>Mr Sanchos Beach Club Cozumel</p>
+            </picture>
+            
+            
+            <picture id="tour_2" class="picture">
+                <a href="https://www.cozumelparks.com/en/chankanaab_/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Chankanaab_Adventure_Beach_Park.jpg" alt="tour two"></a>
+                <p>Chankanaab Adventure Beach Park</p>
+            </picture>
+            <picture id="tour_3" class="picture">
+                <a href="https://discoverymap.com/cozumel-mx/cozumel/things-to-do/mayan-bee-cozumel"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Mayan_Bee_Sanctuary.jpg" alt="tour three"></a>
+                <p>Mayan Bee Sanctuary</p>
+            </picture>
+            <picture id="tour_4" class="picture">
+                <a href="https://paradisebeachcozumel.com/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Paradise_Beach.jpg" alt="tour four"></a>
+                <p>Paradise Beach</p>
+            </picture>
+            <picture id="tour_5" class="picture">
+                <a href="https://www.cozumel-tours.com/palancar-columbia-reef-snorkeling.htm"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Palancar_Reef.jpg" alt="tour five"></a>
+                <p>Palancar Reef</p>
+            </picture>
+            <picture id="tour_6" class="picture">
+                <a href="http://everythingcozumel.com/maps/punta-sur-eco-beach-park/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Punta_Sur_Eco_Beach_Park.jpg" alt="tour six"></a>
+                <p>Punta Sur Eco Beach Park</p>
+            </picture>
+            <picture id="tour_7" class="picture">
+                <a href="https://www.elcielocozumel.com/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Playa_El_Cielo.jpg" alt="tour seven"></a>
+                <p>Playa El Cielo</p>
+            </picture>
+            <picture id="tour_8" class="picture">
+                <a href="https://www.inspirock.com/mexico/san-miguel-de-cozumel/coral-reefs-monument-a5533096301"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Coral_Reefs_Monument.jpg" alt="tour eight"></a>
+                <p>Coral Reefs Monument</p>
+            </picture>
+            <picture id="tour_9" class="picture">
+                <a href="https://www.dolphindiscovery.com/cozumel/"><img src="images/Flag_of_Cozumel.jpg" data-src="images/Dolphin_Discovery_Cozumel.jpg" alt="tour nine"></a>
+                <p>Dolphin Discovery Cozumel</p>
+            </picture>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <p id="authorInfo"></p> 
+        <p id="currentYear"></p>
+        <p>Company Phone: (770) 860-0801</p>
+        <a href="https://www.facebook.com/thisiscozumel/" class="fa fa-facebook"></a>
+        <a href="https://www.pinterest.com/thisiscozumel/" class="fa fa-pinterest"></a>
+        <a href="https://twitter.com/thisiscozumel?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+        <a href="skype:safetourscozumel?call" class="fa fa-skype"></a><br><br>
+        
+    </footer>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    
+</footer>
+<script src="../js/tours.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
